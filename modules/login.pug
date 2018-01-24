@@ -1,0 +1,17 @@
+extends ../layout/main
+
+block title
+	| სისტემაში შესვლა
+
+
+block content
+	a.small(href="./book.html") > სისტემაში შესვლა
+	div.center
+		div.login
+			h3 სისტემაში შესვლა
+				div.inputstyle
+					input( id="email" type="text" placeholder="ელექტრონული მისამართი")
+				div.inputstyle
+					input( id="pass" type="password" placeholder="პაროლი")
+				div.buttonLogin
+					button.loginButton შესვლა

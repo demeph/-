@@ -1,0 +1,24 @@
+html(lang="fr-FR")
+	head
+		link(href="../style/main.css" rel="stylesheet")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		link(rel="stylesheet" media="all and (max-width: 855px)" href="../style/mainMax768.css")
+		link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+		link(rel="stylesheet" href="../style/css/arial-geo-bold.min.css")
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(charset="utf-8")
+		title
+			block title
+		script(language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+		script(src="../modules/header.js")
+	body
+		div.headerPage
+			p.headerPage_title 
+				a.linkName(href="../modules/index.html") ანასტასია
+			a.loginCoin(href="./login.html") სისტემაში შესვლა
+			a.shoppingCart(href="./cart.html") კალათა (0)
+				div
+					img.sp(src="../pics/cart.png" alt="კალათა" height="25px")
+		include ../modules/menu
+		a.small(href="./index.html") მთავარი	
+		block content

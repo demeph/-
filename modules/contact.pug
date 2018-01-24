@@ -1,0 +1,34 @@
+extends ../layout/main
+
+block title
+	|   კონტაქტი
+
+
+block content
+	a.small(href="./cart.html") > კონტაქტი
+	div.titreLivre
+		h3 კონტაქტი
+	div.center
+		div.contactPage
+			div.adress
+				table.contactTab
+					tr
+						th მისამართი
+						td quelque part sur la terre
+					tr
+						th E-mail
+						td contactAnastasia@gmail.com
+					tr
+						th ტელ. ნომერი
+						td (+995 32) 49 48 78
+				div.map
+					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190556.8353771388!2d44.69842475212594!3d41.732373764065215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x61d084ede2576ea3!2sTbilisi%2C+Georgia!5e0!3m2!1sen!2sfr!4v1516648492958" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen)
+			div.formContact
+				div.inputstyle
+					input(type="text" placeholder="თქვენი სახელი" required)
+				div.inputstyle
+					input(type="email" placeholder="თქვენი ელექტრონული მისამართი" required)
+				div.inputstyle
+					textarea.contactText(rows="7" cols="58" placeholder="თქვენი შეტყობინება" required)
+				div.buttonLogin
+					button.fullLengthButton გაგზავნა

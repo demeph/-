@@ -1,0 +1,53 @@
+extends ../layout/main
+
+block title
+	|   კალათა (0)
+
+
+block content
+	a.small(href="./cart.html") > კალათა
+	div.center
+		div.titreLivre
+			h3 კალათა
+		div.cart
+			div.cartItems
+				div.cartItem
+					img.cartBookImg(src="../pics/anastasiaVol. 2.jpg")
+					div.titleCart
+						p 
+							strong დასახელება
+						p.titleCartP ანასტასია ტომი 2 
+					div.price
+						p 
+							strong ფასი
+						p.titleCartP GEL 14,99
+					div.qty
+						p 
+							strong რაოდენობა
+						div.calc
+							button.qtyCalc -
+							p.nbBook 1
+							button.qtyCalc &#43;
+				div.cartItem
+					img.cartBookImg(src="../pics/anastasiaVol. 2.jpg")
+					div.titleCart
+						p 
+							strong დახახელება
+						p.titleCartP ანასტასია ტომი 2 
+					div.price
+						p 
+							strong ფასი
+						p.titleCartP GEL 14,99
+					div.qty
+						p 
+							strong რაოდენობა
+						div.calc
+							button.qtyCalc -
+							p.nbBook 1
+							button.qtyCalc &#43;
+			div.summary
+				p total commande etc
+				button.fullLengthButton.buttonCart შეკვეთა
+
+
+
